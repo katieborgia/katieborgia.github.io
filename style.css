@@ -19,7 +19,6 @@ a {
 .header {
   background: #000;
   color: #ffffff;
-  height: 500px;
   padding: 30px 30px 30px;
   clear: left;
 }
@@ -29,6 +28,9 @@ a {
   }
 .header p {
   font-size: 24px;
+}
+.introduction {
+  padding-left: 20px;
 }
 
 .assignment {
