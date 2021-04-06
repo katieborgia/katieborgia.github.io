@@ -21,11 +21,15 @@ a {
   color: #ffffff;
   height: 500px;
   padding: 30px 30px 30px;
+  clear: left;
 }
 
 .header h1 {
-  font-size: 50px;
+  font-size: 48px;
   }
+.header p {
+  font-size: 24px;
+}
 
 .assignment {
   font-size: 12px;
