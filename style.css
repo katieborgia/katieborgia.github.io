@@ -32,6 +32,7 @@ a {
 
 .introduction img {
   float: left;
+  padding-bottom: 20px;
   
 .introduction p {
   font-size: 24px;
