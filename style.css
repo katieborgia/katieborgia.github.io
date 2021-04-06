@@ -32,6 +32,9 @@ a {
 .introduction {
   padding: 30px;
 }
+.introduction img {
+  float: left;
+}
 
 .assignment {
   font-size: 12px;
