@@ -3,6 +3,8 @@ html, body {
   padding: 0 0 0 0;
   margin: 0;
   font-family: 'helvetica', 'arial', 'sans';
+  background-color: #000;
+  color:#ffffff;
 }
 
 h1,h2,h3,h4 {
@@ -11,12 +13,12 @@ h1,h2,h3,h4 {
 
 
 a {
-  color: #000;
+  color: #ffffff;
 }
 
 .header {
-  background: #fff;
-  color: #000;
+  background: #000;
+  color: #ffffff;
   height: 500px;
   padding: 30px 30px 30px;
 }
@@ -36,7 +38,7 @@ a {
 }
 
 .assignment a {
-    color: #000;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -62,8 +64,8 @@ a {
 }
 
 .widebody a:hover {
-  background: #F06;
-  color: #FFF;
+  background: #000;
+  color: #FFFFFF;
   text-decoration: none;
 }
 
