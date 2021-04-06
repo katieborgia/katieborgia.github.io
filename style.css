@@ -32,6 +32,8 @@ a {
 .introduction {
   padding-left: 30px;
 }
+.introduction img {
+  float: left;
 .introduction section {
   float: left;
 }
