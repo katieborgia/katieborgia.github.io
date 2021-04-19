@@ -84,6 +84,12 @@ h2 {
         text-align: left;
         font-size: 24px;
     }
+.introduction img {
+  float: left;
+  margin-left: 20px;
+}
+
+
 
 .footer {
     width: 1100px;
