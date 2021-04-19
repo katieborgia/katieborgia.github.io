@@ -83,15 +83,11 @@ li a {
     
     h1 {
         clear:left;
-        font-size: 48px;
-        margin-left: 40px;   
+        font-size: 24px;
+          
     }
 
-    h2 {
-        font-size: 36px;
-        clear: left;
-        margin-left: 40px;
-    }
+
 
 .footer {
     width: 1100px;
