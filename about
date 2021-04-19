@@ -15,7 +15,7 @@
     <header>
       <nav>
       <ul class="navigation-items">
-      <li style="float: left;"><a style="display: inline;" href="index.html"><img src="/kborgia/images/logok.png" alt="Katie Borgia's logo"/></a></li>
+      <li style="float: left;"><a style="display: inline;" href="index.html"><img src="logok.png" alt="Katie Borgia's logo"/></a></li>
       <li><a target="self" class="active" href="about.html">about</a></li>
       <li><a target="self" href="index.html">projects</a></li>
       </ul>
