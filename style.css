@@ -7,9 +7,11 @@ html, body {
   color:#ffffff;
 }
 
-h1,h2,h3,h4 {
-  font-family: 'Didact Gothic', sans-serif;
-  }
+header > img {
+    float:left;
+    width:150px;
+    margin-left:20px;
+}
 
 a {
   color: #ffffff;
@@ -22,33 +24,42 @@ a {
   clear: left;
 }
 
-.header h1 {
-  font-size: 48px;
-  }
+ul {
+        font-family: 'Didact Gothic', sans-serif;
+        list-style-type: none;
+        margin-right: 100px;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+li {
+        float: right;
+        font-size:24px;
+    }
 
-.introduction {
-  padding-left: 30px;
-}
+li a {
+        display:inline-block;
+        color:#ffffff;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        font-size:24px;
+        margin-bottom: 10px;
+    }
 
-.introduction img {
-  float: left;
-  padding-bottom: 20px;
-  padding-right: 20px;
-}
-  
-.introduction p {
-  font-size: 24px;
-  margin-top: 0px;
-}
-  
-.assignment {
+    li a:hover {
+        color: #ff0000;
+    }
+
+  .assignment {
   font-size: 12px;
   line-height: 24px;
   font-family: 'Didact Gothic', sans-serif;
   padding: 20px 20px 20px 0px;
-  width: 250px;
+  width: 400px;
   height: 350px;
   float: left;
+  
 }
 
 .assignment a {
@@ -61,6 +72,26 @@ a {
   color: #F06;
   text-decoration: none;
 }
+
+ div.p {
+        padding: 20px;
+        text-align: left;
+        font-size: 24px;
+    }
+
+  
+    
+    h1 {
+        clear:left;
+        font-size: 48px;
+        margin-left: 40px;   
+    }
+
+    h2 {
+        font-size: 36px;
+        clear: left;
+        margin-left: 40px;
+    }
 
 .footer {
     width: 1100px;
@@ -81,4 +112,8 @@ a {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+   
+
+
 
