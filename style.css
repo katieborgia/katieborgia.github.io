@@ -52,8 +52,6 @@ li a {
     }
 
   .assignment {
-  font-size: 12px;
-  line-height: 24px;
   font-family: 'Didact Gothic', sans-serif;
   padding: 20px 20px 20px 0px;
   width: 400px;
@@ -62,14 +60,22 @@ li a {
   
 }
 
+   h1 {
+        font-size: 24px;     
+    }
+
+h2 {
+  font-size: 24px;
+  line-height: 24px;
+}
+
 .assignment a {
     color: #ffffff;
     text-decoration: none;
 }
 
 .assignment a:hover {
-  background: #F06;
-  color: #F06;
+  color: #ff0000;
   text-decoration: none;
 }
 
@@ -78,16 +84,6 @@ li a {
         text-align: left;
         font-size: 24px;
     }
-
-  
-    
-    h1 {
-        clear:left;
-        font-size: 24px;
-          
-    }
-
-
 
 .footer {
     width: 1100px;
