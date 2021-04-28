@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Katie Borgia's Assignment 3 Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+
+    </head> 
+    <body> 
+     <header>
+      <nav>
+      <ul class="navigation-items">
+      <li style="float: left;"><a style="display: inline;" href="index.html"><img src="logok.png" alt="Katie Borgia's logo"/></a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="index.html">projects</a></li>
+      </ul>
+      </nav>
+    </header>
+
+        <div class="header">
+            <h1>Grasshopper - Clips and Nesting</h1>
+          <p style="width: 400px"> I must admit, learning Grasshopper last week was little intimidating, but once I had time to experiment and understand how
+            it works, I had a lot of fun building this week.
+            </p><br><br>
+            
+            <p>
+                <img src="bunny.jpeg" height=300></a>
+                <img src="chowchow.jpeg" height=300></a>
+                <img src="red panda.jpeg" height=300></a>
+            </p>
+            <p>
+              I started working on the clips first. The inspiration for my clips this week was a bobby pin. I first found a picture of a bobby pin on the 
+              internet, and then I turned it into a vector in Illustrator, just like in week 1. Because I knew I was going to have to be able to clip two 
+              layers of cardboard together, I adjusted the sketch to accomodate the width of two layers of cardboard. Once the vector artwork was finished
+              I moved it into Rhino, and opened Grasshopper.<br><br>I highlighted the image and set it as a curve in Grasshopper. Next, I added the Offset Curve,
+              and added a slider to the distance so I could easily adjust the space of the clip if needed. After, I added an extrude for both the original 
+              curve and the offset curve so I could control the height of each of the walls indpendently. My final move in Grasshopper was to group the extrusions 
+              together and bake them. I then put a simple cap on the bobby pin, exported the design with a 0.001 extrusion (understanding how to manipulate 
+              meshes especially on curved surfaces has really helped me this week). I sliced it in Cura with Standard quality settings, with a skirt, changig the 
+              infill pattern to cubic, and updating the mesh resolution and travel resolution to .5. I had to adjust the clip distance after my print was wayyyy 
+              too big, but on the next print I was able to print a successful width, and proceeded to print all 10. See below for my excitement over the success 
+              of my clips.
+            </p><br><br>
+    
+ 
+            <p>
+                 <img src="bobbypin.dxf" height=300></a>
+                 <img src="grasshopperbobby.png" height=300></a>
+                 <img src="bakedbobby.png" height=300></a>
+            </p>
+
+            <p style="font-size: 24px">Check out my files</p>
+                <a href="bobbypin.gh">Grasshopper</a><br>
+                <a href="bobby1.stl">STL</a><br>
+                <a href="bobbypin.jpg">Original image</a><br>
+                <a href="chowchow.dxf">Additional Videos</a><br><br><br>
+            <p>
+                Next, I adjusted the levels, threshold, saturation, and color until I was satisified that the image would trace easily in Illustrator.
+            </p><br><br>
+
+            
+            <p>
+                 <img src="vectorbunny.png" height=300></a>
+                 <img src="vectorchowchow.png" height=300></a>
+                 <img src="vectorredpanda.png" height=300></a>
+            </p>
+            <p>
+                Once in Illustrator, I live traced the object, creating the vector points. Once I was satisified with the 
+                vector files I exported the shapes as .dxf files.<br><br>
+            </p>
+            <p>
+                 <img src="exploded.png" height=300></a>
+                 <img src="exploded chow chow.png" height=300></a>
+                 <img src="exploderedpanda.png" height=300></a>
+            </p>
+            <p>
+               Next, I imported the .dxf file into Rhino. I exploded the shape so I could see the vector points, and make sure my objects were closed.
+            </p><br><br>
+            
+            <p>
+                 <img src="offset.png" height=300></a>
+                 <img src="offsetchowchow.png" height=300></a>
+                 <img src="offsetredpanda.png" height=300></a>
+            </p>
+            <p>
+               Then I used the offset function to create an outer wall (.1").
+            </p><br><br>
+           
+              <p>
+                 <img src="extrude.png" height=300></a>
+                 <img src="extrudechowchow.png" height=300></a>
+                 <img src="extruderedpanda.png" height=300></a>
+            </p>
+            <p>
+               Once I had my outerwall, I used the extrude function to create the height (.5") and make solid shapes. I then exported the files as .stl.
+            </p><br><br>
+
+            <p style="width: 400px"> In the coming weeks I would like to learn how to add a handle to my cookie cutters to make a more accessible version for people who have dexterity or mobility issues.</p><br><br>
+            <p>A special thanks to Junchao who helped me through this process!</p><br><br>
+            <p>Below are the links to the rhino files, .stl files, .dxf files, and .jpeg images.</p>
+                
+                <p style="font-size: 24px">Bunny</p>
+                <a href="bunny.3dm">Rhino model</a><br>
+                <a href="bunny.jpeg">Jpeg</a><br>
+                <a href="bunny.stl">STL</a><br>
+                <a href="bunny.dxf">DXF</a><br><br><br>
+               
+                
+                <p style="font-size: 24px">Red Panda</p>
+                <a href="redpanda.3dm">Rhino model</a><br>
+                <a href="red panda.jpeg">Jpeg</a><br>
+                <a href="redpanda.stl">STL</a><br>
+                <a href="redpanda.dxf">DXF</a><br><br><br>
+                
+                
+                <p style="font-size: 24px">Chow Chow</p>
+                <a href="chowchow.3dm">Rhino model</a><br>
+                <a href="chowchow.jpeg">Jpeg</a><br>
+                <a href="chowchow.stl">STL</a><br>
+                <a href="chowchow.dxf">DXF</a><br><br><br>
+               
+            
+            
+</div>
+    </body>
+</html>
