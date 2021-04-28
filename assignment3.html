@@ -26,12 +26,8 @@
             it works, I had a lot of fun building this week.
             </p><br><br>
             
-            <p>
-                <img src="bunny.jpeg" height=300></a>
-                <img src="chowchow.jpeg" height=300></a>
-                <img src="red panda.jpeg" height=300></a>
-            </p>
-            <p>
+            <p style="font-size:36px">CLIPS</p>
+            <p style="width: 400px">
               I started working on the clips first. The inspiration for my clips this week was a bobby pin. I first found a picture of a bobby pin on the 
               internet, and then I turned it into a vector in Illustrator, just like in week 1. Because I knew I was going to have to be able to clip two 
               layers of cardboard together, I adjusted the sketch to accomodate the width of two layers of cardboard. Once the vector artwork was finished
@@ -59,16 +55,37 @@
                 <a href="bobbypin1.stl">STL</a><br>
                 <a href="bobbypin.jpg">Original image</a><br>
                 <a href="chowchow.dxf">Additional Videos</a><br><br><br>
-            <p>
-                Next, I adjusted the levels, threshold, saturation, and color until I was satisified that the image would trace easily in Illustrator.
+
+            <p style="font-size:36px">NESTING</p>
+            <p style="width: 400px">Nesting was an interesting expereince, but the instruction from class last week was pretty easy to follow. I first 
+                drew a star in Illustrator and imported it into Rhino. I set it as a curve in Grasshopper and then the fun began. I thought the easiest 
+                path to success wwas to make enough offset curves to be able to generate 3 stars. I made multiple offset curves until I had enough. Next 
+                I created separate extrusioins for each wall (I'll explain later why I did this instead of them sharing the same slider for extrusion height). 
+                Once all the walls were built and the extrusions were correct, I group the walls accoring to the 3 nests and baked each of them separately.
+                Next, I capped each in Rhino, but each time I did a Boolean difference to ensure the stars were outlines and not solid objects. I exported
+                the design, and because there were no curves, I used 0.00 extrusion. Once in Cura, I sliced this with low quality settings, and infill lines. 
+                Once the print started I immediately had problems with the top and botton layer pattern settings, but I was able to change the pattern to concentric
+                so it printed easier. I started my second print and thought it was a success, but then I realized the top point in my middle circle had lifted. 
+                This resulted in a quick bed adjustment, a reprint, and a successful print. This was the longest print I have done so far at 2 hours. It was nerve
+                wracking because I was worried something would go wrong and the time would be wasted, but I was pleased by this process. The reason I made each wall 
+                have a different extrusion is because I want to try a print where the tops of the stars aren't level, but they gradually decline from the center star.
+                I haven't finished this yet, but I wanted the oportunity to start it now, rather than later.
             </p><br><br>
 
             
-            <p>
-                 <img src="vectorbunny.png" height=300></a>
-                 <img src="vectorchowchow.png" height=300></a>
-                 <img src="vectorredpanda.png" height=300></a>
+             <p>
+                 <img src="bobbypin.dxf" height=300></a>
+                 <img src="grasshopperbobby.png" height=300></a>
+                 <img src="bakedbobby.png" height=300></a>
+                 <img src="badbobby.JPG" height=300></a>
+                 <img src="goodbobby.JPG" height=300></a>
             </p>
+
+            <p style="font-size: 24px">Check out my files</p>
+                <a href="star.gh">Grasshopper</a><br>
+                <a href="star.3dm">STL</a><br>
+                <a href="star.stl">Original image</a><br>
+                <a href="chowchow.dxf">Additional Videos</a><br><br><br>
             <p>
                 Once in Illustrator, I live traced the object, creating the vector points. Once I was satisified with the 
                 vector files I exported the shapes as .dxf files.<br><br>
