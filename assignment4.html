@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Katie Borgia's Assignment 1 Page!</title> 
+        <title>Katie Borgia's Assignment 4 Page!</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -21,97 +21,93 @@
     </header>
 
         <div class="header">
-            <h1>Cookie Cutters</h1>
-          <p style="width: 400px">For assignment 1, I decided to make a trio of cookie cutters in the shape of animals using Rhino modeling software. The animals I chose were a bunny, a chow chow, and a red panda.
-            </p><br><br>
+            <h1>Combining Meshes</h1>
+          <p style="width: 400px">This week I learned how to combine meshes. The objects I chose were a <a href="https://www.thingiverse.com/thing:2238868/files>
+              cactus</a> and an <a href="https://www.thingiverse.com/thing:1996375/files>owl</a> which I downloaded from Thingiverse. I had this idea that I 
+              wanted the owl to be sandwiched in-between the cactus plant and it's pot, so it looked like it was stuck in the pot and wearing the cactus plant as
+              a crown.
+            </p>
             
             <p>
-                <img src="bunny.jpeg" height=300></a>
-                <img src="chowchow.jpeg" height=300></a>
-                <img src="red panda.jpeg" height=300></a>
-            </p>
-            <p>
-                First, I found an image on the internet of the animals I wanted to make.
+                <img src="cactus.png" height=300></a>
+                <img src="owl.png" height=300></a>
             </p><br><br>
+
+            <p style="width: 400px">Finding the owl file was pretty easy, but I had a hard time finding a cactus file where the plant and cactus were one object, usually the files 
+                had two objects, one for the pot and one for the cactus plant. After I found a single object cactus file, I imported both the cactus and the 
+                owl into Rhino. The objects were veryyyyyy different sizes, so I re-sized both to an appropriate in-between size.
+            </p>
     
  
             <p>
-                 <img src="threshold.png" height=300></a>
-                 <img src="thresholdchowchow.png" height=300></a>
-                 <img src="thresholdredpanda.png" height=300></a>
-            </p>
-            <p>
-                Next, I adjusted the levels, threshold, saturation, and color until I was satisified that the image would trace easily in Illustrator.
+                 <img src="biglittle.png" height=300></a>
+                 
             </p><br><br>
+
+            <p style="width: 400px">After that I examined the quantity of mesh faces to see if either object should be reduced. Looking at the owl, I guessed that I would need to 
+                reduce mesh faces. I was able to reduce from 300,000+ to 20,000. When I inspected the cactus I leared that the cactus only had 1,694 faces so I 
+                didn't reduce it. Next, I used the ShowEdges command because the owl looked a little unusal at first in the shaded view. Luckily, both of my objects 
+                had 0 naked edges and 0 non-manifold edges!
+            </p>
 
             
             <p>
-                 <img src="vectorbunny.png" height=300></a>
-                 <img src="vectorchowchow.png" height=300></a>
-                 <img src="vectorredpanda.png" height=300></a>
-            </p>
-            <p>
-                Once in Illustrator, I live traced the object, creating the vector points. Once I was satisified with the 
-                vector files I exported the shapes as .dxf files.<br><br>
-            </p>
-            <p>
-                 <img src="exploded.png" height=300></a>
-                 <img src="exploded chow chow.png" height=300></a>
-                 <img src="exploderedpanda.png" height=300></a>
-            </p>
-            <p>
-               Next, I imported the .dxf file into Rhino. I exploded the shape so I could see the vector points, and make sure my objects were closed.
+                 <img src="edges1.png" height=300></a>
+                 <img src="edges2.png" height=300></a>
+                 
             </p><br><br>
+
+            <p style="width: 400px">To be on the safe side, I also ran both objects through the MeshRepair command to validate that they were both good meshes. The MeshRepair command confirmed that both 
+                objects were good meshes. Additionally, both had zero items to repair!.
+            </p>
+            <p>
+                 <img src="goodmesh1.png" height=300></a>
+                 <img src="goodmesh2.png" height=300></a>
+                 <img src="goodmesh3.png" height=300></a>
+                 <img src="goodmesh4.png" height=300></a>
+            </p><br><br>
+
+            <p style="width: 400px">I then made a poly surface for the meshes. Because I wanted the owl to be sandwiched between the cactus object, once I added the poly surface to the cactus
+                I copied the cactus and the surface, and then flipped the direction of the surface, so I would have one mesh object of the plant, and one object of the pot.
+                I then used the MeshBooleanDifference command to get the size and shape of the objects to begin combining. 
+            </p>
             
             <p>
-                 <img src="offset.png" height=300></a>
-                 <img src="offsetchowchow.png" height=300></a>
-                 <img src="offsetredpanda.png" height=300></a>
-            </p>
-            <p>
-               Then I used the offset function to create an outer wall (.1").
+                 <img src="boolean1.png" height=300></a>
+                 <img src="boolean2.png" height=300></a>
+                 <img src="boolean3.png" height=300></a>
+                 <img src="boolean4.png" height=300></a>
             </p><br><br>
+
+            <p style="width: 400px"> Using the MeshtoNURB command for all three objects I was able to successfully turn them into polysurfaces. I then aligned all three objects in the top view
+                using concentric align. Once all three pieces were placed where I wanted, I used the BooleanUnion command. I examined the new object and it was closed.
+                I exported it with a 0.001mm tolerance.
+            </p>
            
               <p>
-                 <img src="extrude.png" height=300></a>
-                 <img src="extrudechowchow.png" height=300></a>
-                 <img src="extruderedpanda.png" height=300></a>
-            </p>
-            <p>
-               Once I had my outer wall, I used the extrude function to create the height (.5") and make solid shapes. I then exported the files as .stl. 
-               A few weeks later, I was able to successfully print my cookie cutters.
+                 <img src="poly1.png" height=300></a>
+                 <img src="poly2.png" height=300></a>
+                 
             </p><br><br>
 
-            <p>
-                 <img src="cookiecutter1.JPG" height=300></a>
-                 <img src="cookiecutter2.JPG" height=300></a>
-                 <img src="cookiecutter3.JPG" height=300></a>
+            <p style="width: 400px"> I then sliced the file in Cura using standard quality settings, and standard support with max resolution and max travel resolution increased to .5, and 
+                then I printed my new object.
             </p>
 
-            <p style="width: 400px"> In the coming weeks I would like to learn how to add a handle to my cookie cutters to make a more accessible version for people who have dexterity or mobility issues.</p><br><br>
-            <p>A special thanks to Junchao who helped me through this process!</p><br><br>
-            <p>Below are the links to the rhino files, .stl files, .dxf files, and .jpeg images.</p>
+            <p>
+                 <img src="cowlstl.png" height=300></a>
+                 <img src="cowl.JPG" height=300></a>
+                 <a href="cowl.stl">FINAL STL</a><br>
+            </p><br><br>
+
+           
                 
-                <p style="font-size: 24px">Bunny</p>
-                <a href="bunny.3dm">Rhino model</a><br>
-                <a href="bunny.jpeg">Jpeg</a><br>
-                <a href="bunny.stl">STL</a><br>
-                <a href="bunny.dxf">DXF</a><br><br><br>
+             
+              
+                
                
                 
-                <p style="font-size: 24px">Red Panda</p>
-                <a href="redpanda.3dm">Rhino model</a><br>
-                <a href="red panda.jpeg">Jpeg</a><br>
-                <a href="redpanda.stl">STL</a><br>
-                <a href="redpanda.dxf">DXF</a><br><br><br>
-                
-                
-                <p style="font-size: 24px">Chow Chow</p>
-                <a href="chowchow.3dm">Rhino model</a><br>
-                <a href="chowchow.jpeg">Jpeg</a><br>
-                <a href="chowchow.stl">STL</a><br>
-                <a href="chowchow.dxf">DXF</a><br><br><br>
-               
+  
             
             
 </div>
