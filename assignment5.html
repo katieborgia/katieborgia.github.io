@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Katie Borgia's Assignment 1 Page!</title> 
+        <title>Katie Borgia's Assignment 5 Page!</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 
@@ -21,99 +21,164 @@
     </header>
 
         <div class="header">
-            <h1>Cookie Cutters</h1>
-          <p style="width: 400px">For assignment 1, I decided to make a trio of cookie cutters in the shape of animals using Rhino modeling software. The animals I chose were a bunny, a chow chow, and a red panda.
-            </p><br><br>
+            <h1>Part 1: Finishing the Lamp</h1>
+          <p style="width: 400px">This week didn't go exactly as planned. I was feeling confident that I was in a good place with my lamp at the end of last
+              week. However, when I started printing other final pieces I realized that my project wasn't as feasible as I originally thought. As a reminder,
+              at the end of last week I already had my base printed and the bulb stand. I only needed to print the two shades. When I started printing the
+              outer shade I realized that because of the buld stand height, my shade was going to be too tall for the printer dimensions, so I reprinted the
+              bulb stand to lower the position of the bulb. Then I started on the outer shade. I created the pattern in Rhino using the TweenCurves command
+              and then used FlowAlongSrf command to attach it to the outershade. I started printing te outer shade and realized pretty quickly how delicate
+              these shades would be. I was trying to make the shades as thin as possible to try to capture some semi-opaque light as well, but about 1/2 through
+              a 14 hhr print, it wasn't looking good, and finally the print went awry and a large chunk was missed because the support printed incorrectly.
+              Knowing how unstable this was, and that I would have to print a second shade, I decided to edit my design. My new design is a simpler version.
+              Due to hheight constraints, I raised the height of the base so both the base and the shade would be more stable. I eliminated a second shade, and I 
+              made thhe remaining shade much thicker at 4mm as compared to 1.6mm. With this new plan in mind I made the sketches in Rhino and began printing.
+              Printing the base was long, but went pretty smoothly. The shade was a different story. Once I attached the base to the bulb stand, I measured
+              the fixture to see how tall the shade had to be. Sadly, I discovered after a completed 14 hour print that I had measured in inches and rendered in cm.
+              So now I have a really pretty pencil holder. But, the print was not in vain. I realized the pattern was too close together and it was hard to see the 
+              size gradiaent of the pattern, so I decided to change the pattern just in the z axis. This allowed the pattern to have more negative space and to also 
+              show a bigger gradient size difference through the pattern. After an 18 hour print, I finally had the correctly sized shade and it fit on the base 
+              perfectly.
+            </p>
             
             <p>
-                <img src="bunny.jpeg" height=300></a>
-                <img src="chowchow.jpeg" height=300></a>
-                <img src="red panda.jpeg" height=300></a>
-            </p>
-            <p>
-                First, I found an image on the internet of the animals I wanted to make.
+                <img src="cactus.png" height=300></a>
+                <img src="owl.png" height=300></a><br>
+                <a href="https://www.thingiverse.com/thing:2238868/files">Thingiverse Owl</a><br>
+                <a href="https://www.thingiverse.com/thing:1996375/files">Thingiverse Cactus</a><br>
+                <a href="Cactus.stl">Original cactus STL file from Thingiverse</a><br>
+                <a href="owl-print.stl">Original owl STL file from Thingiverse</a><br>
             </p><br><br>
+
+            <p style="width: 400px">Finding the owl file was pretty easy, but I had a hard time finding a cactus file where the plant and cactus were one object. Usually the files 
+                had two objects, one for the pot and one for the cactus plant. After I found a single object cactus file, I imported both the cactus and the 
+                owl into Rhino. The objects were veryyyyyy different sizes, so I re-sized both to an appropriate in-between size.
+            </p>
     
  
             <p>
-                 <img src="threshold.png" height=300></a>
-                 <img src="thresholdchowchow.png" height=300></a>
-                 <img src="thresholdredpanda.png" height=300></a>
-            </p>
-            <p>
-                Next, I adjusted the levels, threshold, saturation, and color until I was satisified that the image would trace easily in Illustrator.
+                 <img src="biglittle.png" height=300></a>
+                 
             </p><br><br>
+
+            <p style="width: 400px">After that, I examined the quantity of mesh faces to see if either object should be reduced. Looking at the owl, I guessed that I would need to 
+                reduce mesh faces. I was able to reduce from 300,000+ to 20,000. When I inspected the cactus I learned that the cactus only had 1,694 faces so I 
+                didn't reduce it. Next, I used the ShowEdges command because the owl looked a little unusal at first in the shaded view. Luckily, both of my objects 
+                had 0 naked edges and 0 non-manifold edges!
+            </p>
 
             
             <p>
-                 <img src="vectorbunny.png" height=300></a>
-                 <img src="vectorchowchow.png" height=300></a>
-                 <img src="vectorredpanda.png" height=300></a>
-            </p>
-            <p>
-                Once in Illustrator, I live traced the object, creating the vector points. Once I was satisified with the 
-                vector files I exported the shapes as .dxf files.<br><br>
-            </p>
-            <p>
-                 <img src="exploded.png" height=300></a>
-                 <img src="exploded chow chow.png" height=300></a>
-                 <img src="exploderedpanda.png" height=300></a>
-            </p>
-            <p>
-               Next, I imported the .dxf file into Rhino. I exploded the shape so I could see the vector points, and make sure my objects were closed.
+                 <img src="edges1.png" width=300></a>
+                 <img src="edges2.png" width=300></a>
+                 
             </p><br><br>
+
+            <p style="width: 400px">To be on the safe side, I also ran both objects through the MeshRepair command to validate that they were both good meshes. The MeshRepair command confirmed that both 
+                objects were good meshes. Additionally, both had zero items to repair!.
+            </p>
+            <p>
+                 <img src="goodmesh1.png" height=300></a>
+                 <img src="goodmesh2.png" height=300></a><br>
+                 <img src="goodmesh3.png" height=300></a>
+                 <img src="goodmesh4.png" height=300></a>
+            </p><br><br>
+
+            <p style="width: 400px">I then made a poly surface for the meshes. Because I wanted the owl to be sandwiched between the cactus object, once I added the poly surface to the cactus
+                I copied the cactus and the surface, and then flipped the direction of the surface, so I would have one mesh object of the plant, and one object of the pot.
+                I then used the MeshBooleanDifference command to get the size and shape of the objects to begin combining. 
+            </p>
             
             <p>
-                 <img src="offset.png" height=300></a>
-                 <img src="offsetchowchow.png" height=300></a>
-                 <img src="offsetredpanda.png" height=300></a>
-            </p>
-            <p>
-               Then I used the offset function to create an outer wall (.1").
+                 <img src="boolean1.png" height=300></a>
+                 <img src="boolean2.png" height=300></a><br>
+                 <img src="boolean3.png" height=300></a>
+                 <img src="boolean4.png" height=300></a>
             </p><br><br>
+
+            <p style="width: 400px"> Using the MeshtoNURB command for all three objects I was able to successfully turn them into polysurfaces. I then aligned all three objects in the top view
+                using concentric align. Once all three pieces were placed where I wanted, I used the BooleanUnion command. I examined the new object and it was closed.
+                I exported it with a 0.001mm tolerance.
+            </p>
            
               <p>
-                 <img src="extrude.png" height=300></a>
-                 <img src="extrudechowchow.png" height=300></a>
-                 <img src="extruderedpanda.png" height=300></a>
-            </p>
-            <p>
-               Once I had my outer wall, I used the extrude function to create the height (.5") and make solid shapes. I then exported the files as .stl. 
-               A few weeks later, I was able to successfully print my cookie cutters.
+                 <img src="poly1.png" height=300></a>
+                 <img src="poly2.png" height=300></a>
+                 
             </p><br><br>
 
-            <p>
-                 <img src="cookiecutter1.JPG" height=300></a>
-                 <img src="cookiecutter2.JPG" height=300></a>
-                 <img src="cookiecutter3.JPG" height=300></a>
+            <p style="width: 400px"> I then sliced the file in Cura using standard quality settings, and standard support with max resolution and max travel resolution increased to .5, and 
+                then I printed my new object.
             </p>
 
-            <p style="width: 400px"> In the coming weeks I would like to learn how to add a handle to my cookie cutters to make a more accessible version for people who have dexterity or mobility issues.</p><br><br>
-            <p>A special thanks to Junchao who helped me through this process!</p><br><br>
-            <p>Below are the links to the rhino files, .stl files, .dxf files, and .jpeg images.</p>
+            <p>
+                 <img src="cowlstl.png" height=300></a>
+                 <img src="cowl.JPG" height=300></a><br>
+                 <a href="cowl.stl">FINAL STL</a><br>
+                 <a href="cowl.3dm.zip">FINAL RHINO</a><br>
+            </p><br><br>
+
+
+<h1>Part 2: Building Diamonds</h1>
+          <p style="width: 400px"> A few years ago, a co-worker of mine had brought in
+              handmade soaps in a diamond shape and I thought these were really awesome. The shape and color of her soaps was my inspiration for this week. I
+              first created my diamond shape in Rhino my using two hexagon shapes and a point as the beginning of the shape. I then concentrically aligned them,
+              combined them with the loft command with the setting of split at tangents, then used the cap planar holes command, and this was the resulting beauty!
+            </p>
+            
+            <p>
+                <img src="diamond.png" height=300></a>
                 
-                <p style="font-size: 24px">Bunny</p>
-                <a href="bunny.3dm">Rhino model</a><br>
-                <a href="bunny.jpeg">Jpeg</a><br>
-                <a href="bunny.stl">STL</a><br>
-                <a href="bunny.dxf">DXF</a><br><br><br>
+                
+               
+            </p><br><br>
+
+            <p style="width: 400px">Next, I used the draft angle analysis. I was not surprised when I saw an even divide of red and blue, but I was 
+                thinking It might be easier to print the mold symterrically down the the vertical center to create a symmetrical mold that I could hide 
+                in on of the seams of the diamond, but then I realized I would have a seam on the top of the diamond, so I went back to the original 
+                draft angle analysis. I also thought this would be the better way to explode the shape because I could fill it from the top and I could 
+                leave a hole open so I could see when the mold was fully filled, and woulnd’t have excess in the hole. So with this plan in mind, I got 
+                to work…..
+                
+            </p>
+    
+ 
+            <p>
+                <img src="draft1.png" height=300></a>
+                <img src="draft2.png" height=300></a>
+                 
+            </p><br><br>
+
+            <p style="width: 400px">I created a surface that divided the shape and then I exploded it. I grouped the surfaces to create the two sides 
+                to the mold. Next I did a ribbon offset. Since my shape is divided on the horizontal axis, there was no need for me to make another 
+                offset with a 0 curve. I did use two offsets to create a planar surface which I connected to the ribbon offset. Then I extruded the sides
+                of the planar surface to create the base of the mold. I learned about the shift command keyboard function to 
+                select only the top layer of the box to delete it. Finally, I used BooleanDiference to create the pour hole in the top of the top mold.
+            </p>
+
+            
+            <p>
+                 <img src="divide1.png" height=300></a>
+                 <img src="divide2.png" height=300></a>
+                 <img src="extrude3.png" height=300></a>
+                 <img src="extrude2.png" height=300></a>
+                
+                 
+            </p><br><br>
+
+            <p style="width: 400px">With both sides of my mold created, I added my keys. I did this by aligning the two pieces on top of each other and 
+                adding spheres for the keys. Next I copied all of the pieces, and used boolean union on one side and boolean difference on the other. Finally,
+                I had to take both pieces of the mold and add the surrounding box to use for the silicone. I drew the boxes and used the BooleanDifference
+                command to create the silicone mold. I then printed it.
+            </p>
+            <p>
+                <img src="finalview.png" height=300></a>
+                <img src="finalmoldprint.jpg" height=300></a>
                
                 
-                <p style="font-size: 24px">Red Panda</p>
-                <a href="redpanda.3dm">Rhino model</a><br>
-                <a href="red panda.jpeg">Jpeg</a><br>
-                <a href="redpanda.stl">STL</a><br>
-                <a href="redpanda.dxf">DXF</a><br><br><br>
-                
-                
-                <p style="font-size: 24px">Chow Chow</p>
-                <a href="chowchow.3dm">Rhino model</a><br>
-                <a href="chowchow.jpeg">Jpeg</a><br>
-                <a href="chowchow.stl">STL</a><br>
-                <a href="chowchow.dxf">DXF</a><br><br><br>
-               
-            
-            
+            </p><br><br>
+
+          
 </div>
     </body>
 </html>
