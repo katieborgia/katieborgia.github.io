@@ -8,7 +8,7 @@
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     </head> 
     <body> 
@@ -20,6 +20,7 @@
       <li><a target="self" href="index.html">projects</a></li>
       </ul>
       </nav>
+<div align="center">
 </div>
 	<div class="introduction" style="clear: left">
 	    <img src="katieborgia.jpg" alt="an image of Katie Borgia, jumping in the air" width=400</a>	
