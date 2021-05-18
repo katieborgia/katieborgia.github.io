@@ -22,16 +22,16 @@
       </nav>
     </header>
 
-        <div class="header">
+        <div class="header" align="center">
             <h1>Part 1: Combining Meshes</h1>
-          <p style="width: 400px">This week I learned how to combine meshes. The objects I chose 
+          <p style="width: 650px; display: inline-block; text-align: left">This week I learned how to combine meshes. The objects I chose 
               were a cactus and an owl which I 
               downloaded from Thingiverse. I had this idea that I 
               wanted the owl to be sandwiched in-between the cactus plant and it's pot, so it looked like it was stuck in the pot and wearing the cactus plant as
               a crown.
             </p>
             
-            <p>
+            <p align="center">
                 <img src="cactus.png" height=300></a>
                 <img src="owl.png" height=300></a><br>
                 <a href="https://www.thingiverse.com/thing:2238868/files">Thingiverse Owl</a><br>
@@ -40,68 +40,68 @@
                 <a href="owl-print.stl">Original owl STL file from Thingiverse</a><br>
             </p><br><br>
 
-            <p style="width: 400px">Finding the owl file was pretty easy, but I had a hard time finding a cactus file where the plant and cactus were one object. Usually the files 
+            <p style="width: 650px; display: inline-block; text-align: left">Finding the owl file was pretty easy, but I had a hard time finding a cactus file where the plant and cactus were one object. Usually the files 
                 had two objects, one for the pot and one for the cactus plant. After I found a single object cactus file, I imported both the cactus and the 
                 owl into Rhino. The objects were veryyyyyy different sizes, so I re-sized both to an appropriate in-between size.
             </p>
     
  
-            <p>
+            <p align="center">
                  <img src="biglittle.png" height=300></a>
                  
             </p><br><br>
 
-            <p style="width: 400px">After that, I examined the quantity of mesh faces to see if either object should be reduced. Looking at the owl, I guessed that I would need to 
+            <p style="width: 650px; display: inline-block; text-align: left">After that, I examined the quantity of mesh faces to see if either object should be reduced. Looking at the owl, I guessed that I would need to 
                 reduce mesh faces. I was able to reduce from 300,000+ to 20,000. When I inspected the cactus I learned that the cactus only had 1,694 faces so I 
                 didn't reduce it. Next, I used the ShowEdges command because the owl looked a little unusal at first in the shaded view. Luckily, both of my objects 
                 had 0 naked edges and 0 non-manifold edges!
             </p>
 
             
-            <p>
+            <p align="center">
                  <img src="edges1.png" width=300></a>
                  <img src="edges2.png" width=300></a>
                  
             </p><br><br>
 
-            <p style="width: 400px">To be on the safe side, I also ran both objects through the MeshRepair command to validate that they were both good meshes. The MeshRepair command confirmed that both 
+            <p style="width: 650px; display: inline-block; text-align: left">To be on the safe side, I also ran both objects through the MeshRepair command to validate that they were both good meshes. The MeshRepair command confirmed that both 
                 objects were good meshes. Additionally, both had zero items to repair!.
             </p>
-            <p>
+            <p align="center">
                  <img src="goodmesh1.png" height=300></a>
                  <img src="goodmesh2.png" height=300></a><br>
                  <img src="goodmesh3.png" height=300></a>
                  <img src="goodmesh4.png" height=300></a>
             </p><br><br>
 
-            <p style="width: 400px">I then made a poly surface for the meshes. Because I wanted the owl to be sandwiched between the cactus object, once I added the poly surface to the cactus
+            <p style="width: 650px; display: inline-block; text-align: left">I then made a poly surface for the meshes. Because I wanted the owl to be sandwiched between the cactus object, once I added the poly surface to the cactus
                 I copied the cactus and the surface, and then flipped the direction of the surface, so I would have one mesh object of the plant, and one object of the pot.
                 I then used the MeshBooleanDifference command to get the size and shape of the objects to begin combining. 
             </p>
             
-            <p>
+            <p align="center">
                  <img src="boolean1.png" height=300></a>
                  <img src="boolean2.png" height=300></a><br>
                  <img src="boolean3.png" height=300></a>
                  <img src="boolean4.png" height=300></a>
             </p><br><br>
 
-            <p style="width: 400px"> Using the MeshtoNURB command for all three objects I was able to successfully turn them into polysurfaces. I then aligned all three objects in the top view
+            <p style="width: 650px; display: inline-block; text-align: left"> Using the MeshtoNURB command for all three objects I was able to successfully turn them into polysurfaces. I then aligned all three objects in the top view
                 using concentric align. Once all three pieces were placed where I wanted, I used the BooleanUnion command. I examined the new object and it was closed.
                 I exported it with a 0.001mm tolerance.
             </p>
            
-              <p>
+              <p align="center">
                  <img src="poly1.png" height=300></a>
                  <img src="poly2.png" height=300></a>
                  
             </p><br><br>
 
-            <p style="width: 400px"> I then sliced the file in Cura using standard quality settings, and standard support with max resolution and max travel resolution increased to .5, and 
+            <p style="width: 650px; display: inline-block; text-align: left"> I then sliced the file in Cura using standard quality settings, and standard support with max resolution and max travel resolution increased to .5, and 
                 then I printed my new object.
             </p>
 
-            <p>
+            <p align="center">
                  <img src="cowlstl.png" height=300></a>
                  <img src="cowl.JPG" height=300></a><br>
                  <a href="cowl.stl">FINAL STL</a><br>
@@ -110,14 +110,14 @@
 
 
 <h1>Part 2: Beginning the Lamp</h1>
-          <p style="width: 400px">Additionally, this week, I started my lamp project. I had a few ideas before the one I landed on. Initially I was thinking about a 
+          <p style="width: 650px; display: inline-block; text-align: left">Additionally, this week, I started my lamp project. I had a few ideas before the one I landed on. Initially I was thinking about a 
               shutter inspired construction that had many blades and faces that you could rotate individually. When I did a test print I realized this fixture would
               be much bulkier than I wanted. Next, I thought about a rotating ball sitting on top of a cylinder, similar to a table top disco light, so I printed out
               a fixture that could rest in the light buld attachment area, which had a nested tunnel where the ball could rest. Before I could figure out what the base 
               looked like, my inspiration changed again...
             </p>
             
-            <p>
+            <p align="center">
                 <img src="lamp1.JPG" height=300></a>
                 <img src="lamp2.JPG" height=300></a>
                 <img src="lamp3.JPG" height=300></a>
@@ -129,42 +129,42 @@
                
             </p><br><br>
 
-            <p style="width: 400px">My inspiration for this light fixture is a <a href="https://www.instagram.com/p/CNSzHU9DNGh/">night sky time lapse</a>.
+            <p style="width: 650px; display: inline-block; text-align: left">My inspiration for this light fixture is a <a href="https://www.instagram.com/p/CNSzHU9DNGh/">night sky time lapse</a>.
                 
             </p>
     
  
-            <p>
+            <p align="center">
                 <img src="lampsketch1.JPG" height=800></a>
                  
             </p><br><br>
 
-            <p style="width: 400px">First, I wanted to focus on the structure to hold up the bulb. Since I wanted a table top light, I decided to create a thick
+            <p style="width: 650px; display: inline-block; text-align: left">First, I wanted to focus on the structure to hold up the bulb. Since I wanted a table top light, I decided to create a thick
                 tube with a hole in the bottom for the cord to funnel through. I measured the outside of the bulb attachemnt with my calipers and printed a tube based on those
                 measurements. Luckily, it fit! 
             </p>
 
             
-            <p>
+            <p align="center">
                  <img src="bulbstand.JPG" width=300></a>
                 
                  
             </p><br><br>
 
-            <p style="width: 400px">Next, I decided to tackle the base of the lamp. I decided I wanted a double layer effect, with the possibility that the inner 
+            <p style="width: 650px; display: inline-block; text-align: left">Next, I decided to tackle the base of the lamp. I decided I wanted a double layer effect, with the possibility that the inner 
                 layer could rotate, simulating the time lapse, while the contrast of different patterns between the two layers would create an everchanging light 
                 pattern. I liked the idea of having a base where each layer could sit in a ridge on the base. I guestimated how big I wanted the base to be, then I
                 created a square tunnel .25cm wide for the outer box, and a .25cm wide tunnel for the cylindrical inner layer to rest. I also had to make sure I
                 had an open hole in the middle for the bulb stand to rest. I aligned everything concentrically in the top view so it was centered.
             </p>
-            <p>
+            <p align="center">
                 <img src="rhinolampbase.png" height=300></a>
                 <img src="stand1.JPG" height=300></a>
                 <img src="stand2.JPG" height=300></a>
                 
             </p><br><br>
 
-            <p style="width: 400px">Next, I decide to make a trial height for the cylinder inner layer and the square outer layer. The trial layer for the cylinder worked well,
+            <p style="width: 650px; display: inline-block; text-align: left">Next, I decide to make a trial height for the cylinder inner layer and the square outer layer. The trial layer for the cylinder worked well,
                 but the box did not. It kept lifting up and did not print tightly. I was about to give up and change the design when I realized that maybe rafting the box would 
                 work, and I was right. Now, I am here. I need to print out the final outer box with pattern and inner cylinder with pattern. 
                 The height of layers will be about 8" tall. The square box will have a hole in the top of it for the turning knob for the cylinder layer to poke through to
@@ -172,15 +172,15 @@
                                                                                   
             </p>
            
-              <p>
+              <p align="center">
                  <img src="lampprogress.JPG" height=300></a>
                  
             </p><br><br>
 
-            <p style="width: 400px"> Here are some images of the inspiration I am using for the cutout pattern on my layers.
+            <p style="width: 650px; display: inline-block; text-align: left"> Here are some images of the inspiration I am using for the cutout pattern on my layers.
             </p>
 
-            <p>
+            <p align="center">
                  <img src="pattern5.png" height=300></a>
                  <img src="pattern2.png" height=300></a><br>
                  <img src="pattern3.png" height=300></a>
