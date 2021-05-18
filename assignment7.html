@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Katie Borgia's Assignment 4 Page!</title> 
+        <title>Katie Borgia's Assignment 7 Page!</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,38 +23,31 @@
     </header>
 
         <div class="header" align="center">
-            <h1>Part 1: Combining Meshes</h1>
-          <p style="width: 650px; display: inline-block; text-align: left">This week I learned how to combine meshes. The objects I chose 
-              were a cactus and an owl which I 
-              downloaded from Thingiverse. I had this idea that I 
-              wanted the owl to be sandwiched in-between the cactus plant and it's pot, so it looked like it was stuck in the pot and wearing the cactus plant as
-              a crown.
+            <h1>Part 1: Final Project Proposal</h1>
+          <p style="width: 650px; display: inline-block; text-align: left">CONCEPT<br>For my final project I wanted to create a series of pieces. After much thought I 
+		  decided I wanted to make two sets of chess pieces. Santiago Calatrava is one of my 
+		  favorite architects and his projects Turning Torso and Chicago Spire were the design inspirations for this project. The aim is to create a 
+		  more sculptural and modern version of these classic pieces. 
             </p>
             
             <p align="center">
-                <img src="cactus.png" height=300></a>
-                <img src="owl.png" height=300></a><br>
-                <a href="https://www.thingiverse.com/thing:2238868/files">Thingiverse Owl</a><br>
-                <a href="https://www.thingiverse.com/thing:1996375/files">Thingiverse Cactus</a><br>
-                <a href="Cactus.stl">Original cactus STL file from Thingiverse</a><br>
-                <a href="owl-print.stl">Original owl STL file from Thingiverse</a><br>
+                <img src="turningtorso.png" height=300><a href="https://www.calatrava.com/projects/turning-torso-malmoe.html?view_mode=gallery&image=1">Turning Torso</a>
+                <img src="chicagospire.png" height=300><a href="https://www.calatrava.com/projects/chicago-spire-tower-chicago.html?view_mode=gallery&image=5">Chicago Spire</a>
+             
             </p><br><br>
 
-            <p style="width: 650px; display: inline-block; text-align: left">Finding the owl file was pretty easy, but I had a hard time finding a cactus file where the plant and cactus were one object. Usually the files 
-                had two objects, one for the pot and one for the cactus plant. After I found a single object cactus file, I imported both the cactus and the 
-                owl into Rhino. The objects were veryyyyyy different sizes, so I re-sized both to an appropriate in-between size.
+            <p style="width: 650px; display: inline-block; text-align: left">RENDERING<br>Below is a rendering of the intended final design. I hope to create one set 
+		    that is gold and one set that is black, both in PLA filament.
             </p>
     
  
             <p align="center">
-                 <img src="biglittle.png" height=300></a>
+                 <img src="rhinoshaderender.png" height=300></a>
+	    	 <img src="rhinoshaderender.png" height=300></a>
                  
             </p><br><br>
 
-            <p style="width: 650px; display: inline-block; text-align: left">After that, I examined the quantity of mesh faces to see if either object should be reduced. Looking at the owl, I guessed that I would need to 
-                reduce mesh faces. I was able to reduce from 300,000+ to 20,000. When I inspected the cactus I learned that the cactus only had 1,694 faces so I 
-                didn't reduce it. Next, I used the ShowEdges command because the owl looked a little unusal at first in the shaded view. Luckily, both of my objects 
-                had 0 naked edges and 0 non-manifold edges!
+            <p style="width: 650px; display: inline-block; text-align: left">TASKS<br>
             </p>
 
             
@@ -64,19 +57,24 @@
                  
             </p><br><br>
 
-            <p style="width: 650px; display: inline-block; text-align: left">To be on the safe side, I also ran both objects through the MeshRepair command to validate that they were both good meshes. The MeshRepair command confirmed that both 
-                objects were good meshes. Additionally, both had zero items to repair!.
+            <p style="width: 650px; display: inline-block; text-align: left">TIMELINE<br>As shown above, the design and rendering for this project is complete. For this process I plan to 3D print each set in 3 groups each. 
+		    The first group will be all 8 pawns (approximate printing time: 4 hrs. and 15 mins.).<br> The second set will include both bishops, 
+		    both knights and both rooks for a total of 6 pieces (approximate printing time: 6 hrs and 15 mins.).<br>The third set will be the 
+		    king and queen (approximiate printing time: 8 hrs.).<br>Total print time for each set is about 18.5 hours. If time wasnt an issue I would print
+		    one set and cast the other. However, casting would take a great deal of time to print molds and cure silicone for 6 separate pieces, and I want to ensure there
+		    is enough room in my timeline in case something goes wrong. Because I am using two different
+		    colors for these sets, for the interest of time, I am going to print the gold set then the black set instead of printing by the piece shape. Because
+		    the sketches are finished in Rhino, my goal is to complete one set each week. To give myself some extra time in case something goes awry, I plan to 
+		    have the first set finished by Monday, May 24th, and the second set by Monday May 31st. 
+		    If I get completely off track for this project and the printing goes sideways my contingency plan is to print one set instead of two. If I
+		    more than 2 weeks I would make one set in PLA and one set cast in plaster
             </p>
             <p align="center">
-                 <img src="goodmesh1.png" height=300></a>
-                 <img src="goodmesh2.png" height=300></a><br>
-                 <img src="goodmesh3.png" height=300></a>
-                 <img src="goodmesh4.png" height=300></a>
+                 <img src="timeline.png" height=300></a>
+               
             </p><br><br>
 
-            <p style="width: 650px; display: inline-block; text-align: left">I then made a poly surface for the meshes. Because I wanted the owl to be sandwiched between the cactus object, once I added the poly surface to the cactus
-                I copied the cactus and the surface, and then flipped the direction of the surface, so I would have one mesh object of the plant, and one object of the pot.
-                I then used the MeshBooleanDifference command to get the size and shape of the objects to begin combining. 
+            <p style="width: 650px; display: inline-block; text-align: left">BOM and sourcing schedule<br>
             </p>
             
             <p align="center">
@@ -97,97 +95,7 @@
                  
             </p><br><br>
 
-            <p style="width: 650px; display: inline-block; text-align: left"> I then sliced the file in Cura using standard quality settings, and standard support with max resolution and max travel resolution increased to .5, and 
-                then I printed my new object.
-            </p>
-
-            <p align="center">
-                 <img src="cowlstl.png" height=300></a>
-                 <img src="cowl.JPG" height=300></a><br>
-                 <a href="cowl.stl">FINAL STL</a><br>
-                 <a href="cowl.3dm.zip">FINAL RHINO</a><br>
-            </p><br><br>
-
-
-<h1>Part 2: Beginning the Lamp</h1>
-          <p style="width: 650px; display: inline-block; text-align: left">Additionally, this week, I started my lamp project. I had a few ideas before the one I landed on. Initially I was thinking about a 
-              shutter inspired construction that had many blades and faces that you could rotate individually. When I did a test print I realized this fixture would
-              be much bulkier than I wanted. Next, I thought about a rotating ball sitting on top of a cylinder, similar to a table top disco light, so I printed out
-              a fixture that could rest in the light buld attachment area, which had a nested tunnel where the ball could rest. Before I could figure out what the base 
-              looked like, my inspiration changed again...
-            </p>
-            
-            <p align="center">
-                <img src="lamp1.JPG" height=300></a>
-                <img src="lamp2.JPG" height=300></a>
-                <img src="lamp3.JPG" height=300></a>
-                <img src="lamp4.JPG" height=300></a>
-                <img src="lamp5.JPG" height=300></a>
-                <img src="lamp6.JPG" height=300></a>
-                <img src="lamp7.JPG" height=300></a>
-                
-               
-            </p><br><br>
-
-            <p style="width: 650px; display: inline-block; text-align: left">My inspiration for this light fixture is a <a href="https://www.instagram.com/p/CNSzHU9DNGh/">night sky time lapse</a>.
-                
-            </p>
-    
- 
-            <p align="center">
-                <img src="lampsketch1.JPG" height=800></a>
-                 
-            </p><br><br>
-
-            <p style="width: 650px; display: inline-block; text-align: left">First, I wanted to focus on the structure to hold up the bulb. Since I wanted a table top light, I decided to create a thick
-                tube with a hole in the bottom for the cord to funnel through. I measured the outside of the bulb attachemnt with my calipers and printed a tube based on those
-                measurements. Luckily, it fit! 
-            </p>
-
-            
-            <p align="center">
-                 <img src="bulbstand.JPG" width=300></a>
-                
-                 
-            </p><br><br>
-
-            <p style="width: 650px; display: inline-block; text-align: left">Next, I decided to tackle the base of the lamp. I decided I wanted a double layer effect, with the possibility that the inner 
-                layer could rotate, simulating the time lapse, while the contrast of different patterns between the two layers would create an everchanging light 
-                pattern. I liked the idea of having a base where each layer could sit in a ridge on the base. I guestimated how big I wanted the base to be, then I
-                created a square tunnel .25cm wide for the outer box, and a .25cm wide tunnel for the cylindrical inner layer to rest. I also had to make sure I
-                had an open hole in the middle for the bulb stand to rest. I aligned everything concentrically in the top view so it was centered.
-            </p>
-            <p align="center">
-                <img src="rhinolampbase.png" height=300></a>
-                <img src="stand1.JPG" height=300></a>
-                <img src="stand2.JPG" height=300></a>
-                
-            </p><br><br>
-
-            <p style="width: 650px; display: inline-block; text-align: left">Next, I decide to make a trial height for the cylinder inner layer and the square outer layer. The trial layer for the cylinder worked well,
-                but the box did not. It kept lifting up and did not print tightly. I was about to give up and change the design when I realized that maybe rafting the box would 
-                work, and I was right. Now, I am here. I need to print out the final outer box with pattern and inner cylinder with pattern. 
-                The height of layers will be about 8" tall. The square box will have a hole in the top of it for the turning knob for the cylinder layer to poke through to
-                function.
-                                                                                  
-            </p>
            
-              <p align="center">
-                 <img src="lampprogress.JPG" height=300></a>
-                 
-            </p><br><br>
-
-            <p style="width: 650px; display: inline-block; text-align: left"> Here are some images of the inspiration I am using for the cutout pattern on my layers.
-            </p>
-
-            <p align="center">
-                 <img src="pattern5.png" height=300></a>
-                 <img src="pattern2.png" height=300></a><br>
-                 <img src="pattern3.png" height=300></a>
-                 <img src="pattern4.png" height=300></a><br>
-                 <a href="https://www.pinterest.com/kateborgia/dig-fab/">Link to inspiration images</a><br>
-            </p><br><br>
-         
 </div>
     </body>
 </html>
