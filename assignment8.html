@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+
+        <title>Katie Borgia's Assignment 7 Page!</title> 
+
+        <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+	    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    </head> 
+    <body> 
+     <header>
+      <nav>
+      <ul class="navigation-items">
+      <li style="float: left;"><a style="display: inline;" href="index.html"><img src="logok.png" alt="Katie Borgia's logo"/></a></li>
+      <li><a href="about.html">about</a></li>
+      <li><a href="index.html">projects</a></li>
+      </ul>
+      </nav>
+    </header>
+
+        <div class="header" align="center">
+            <h1>Part 1: Final Project Proposal</h1>
+		<h2 style="font-size: 36px">Concept</h2>
+          <p style="width: 650px; display: inline-block; text-align: left;">For my final project I wanted to create a series of pieces. 
+		  After much thought I decided I wanted to make two sets of chess pieces. Santiago Calatrava is one of my 
+		  favorite architects and his projects, Turning Torso and Chicago Spire, were the design inspirations for this project. The aim is to create a 
+		  more sculptural and modern version of classic chess pieces. 
+            </p>
+            
+            <p align="center">
+                <img src="turningtorso.png" height=600>
+                <img src="chicagospire.png" height=600><br>
+            </p><br><br>
+		
+	   <p style="width: 650px; display: inline-block; text-align: left;">I started with some general shape ideas. I wanted to make sure the sets looked cohesive but
+		   not duplicative. Also, I wanted to make sure my shapes were a realistic size so I looked up guidelines for chess piece size and chess board size. Once I 
+		   had my ideas and sizes, I started building the Grasshopper geometry. 
+            </p>
+            
+            <p align="center">
+		<img src="sketches12.png" height=300>
+		<img src="sketches13.png" height=300><br>
+            </p><br><br>
+		
+	    <p style="width: 650px; display: inline-block; text-align: left;">Since I am still pretty new to Grasshopper, I had to find a tutorial that would help
+		    me undestand how to build these pieces. (See below in References for a link to the video.) My plan was to start with one piece in Grasshopper, and then model the
+		    other pieces based on the same geometry. I set up number sliders for the number of sides which I decided would be 8. I also
+		    add a slider for base radius, the amount of rotation, the height, and the height spacing. Because all piece sizes were increments of
+		    .5cm, I was able to set the spacing between 10 -20 to adjust the height. I discovered that I had to add an extra .5 to every height because 
+		    the first point was at 0. For the rotation, I orginially didn't have a strategy for how it was used, but then I realized my pieces weren't 
+		    looking cohesive so I decided that I would change the rotation of each piece by 2 based on the weakest piece to the strongest piece in the 
+		    game. The other component that was critical to this success was the graph mapper. Because I was pretty unfamiliar with how the graph mapper 
+		    worked and the types of graphs, I spent some time playing with the different graph types and figuring out which one worked best for the shapes
+		    I was trying to create. (Below is the Grasshopper geometry for the queen piece). Once I had all pieces 
+		    modeled, I transferred all pieces to one Rhino file so I could see them all together as a set. I realized the slider I had for radius was 
+		    base radius 
+		    and not the widest radius of the piece, so I had to do some minor adjustments to make sure the pieces were accurately scaled in reference 
+		    to each other. Next, I had to use the Flip 
+		    command for 
+		    all of the pieces, followed by the Cap command to close the pieces and make closed polygons. Then I made a chess board to begin alignment 
+		    for rendering.
+		    After the pieces were set up for a chess set, I then divided the sets into two different layers so I could render them separately.
+            </p>
+            
+            <p align="center">
+		<img src="grasshopperqueen.png" height=600><br>
+		<img src="wireset.png" height=300><br>
+		<img src="wirerender.png" height=300>
+		
+            </p><br><br>
+
+	    <h2 style="font-size: 36px">Rendering</h2>
+            <p style="width: 650px; display: inline-block; text-align: left">Below is a rendering of the intended final design. I hope to create one set 
+		    that is bronze and one set that is black, both in PLA filament. Due to time and print bed constraints, I do not plan to build the chessboard at this time,
+		    but wanted to include it in the rendering for context. The one on the left is the plaster render, and the one on the right is the plastic render.
+            </p>
+    
+ 
+            <p align="center">
+                 <img src="plaster1.png" height=300></a>
+	    	 <img src="plastic1.png" height=300></a>
+                 
+            </p><br><br>
+
+	    <h2 style="font-size: 36px">Tasks</h2>
+            <p style="width: 650px; display: inline-block; text-align: left">
+		    GRASSHOPPER<br> For this project, I want to strengthen my Grasshopper skills. After watching a tutorial online about how to create rotating
+		    shapes in grasshopper, I want to build all of my shapes in Grasshopper instead of sketching in Rhino and using the Revolve command. Grasshopper
+		    is used to create the height, the base radius, the rotation of the object, and using graph mapper to create unique shapes.<br><br>  
+		    RHINO<br>Post bake, Rhino is used for flipping, capping, and aligning all pieces. It is also used for any last minute size adjustments, and 
+		    for setting up the chessboard for rendering.<br><br> 
+		    SLICING<br>Because of the intricate, rotating, bulbous shapes, choosing the correct slicing settings will be critical to 
+		    a successful print. Choosing the correct print speed and support will be critical to the success of the prints.<br><br> 
+		    PRINTING<br>In total, there will be 32 pieces to print: 16 pawns, 4 rooks, 4 knights, 4 bishops, 2 queens, and 2 kings. Instead of doing 32
+		    separate prints, I will print in 3 groups for each set:<br> 1. 8 pawns<br> 2. 2 rooks, 2 knights, and 2 bishops<br> 3. king and queen<br><br>
+		    RENDERING<br>Because there are so many pieces to these sets, and they are two different colors, rendering is helpful to show a more realistic view of 
+		    what these pieces should look like when finished.
+            </p><br><br>
+
+      
+	    <h2 style="font-size: 36px">Timeline</h2>
+            <p style="width: 650px; display: inline-block; text-align: left">As shown above, the design and rendering for this project is complete. For this process 
+		    I plan to 3D print each set in 3 groups each.
+		    The first group will be all 8 pawns (approximate printing time: 4 hrs. and 15 mins.). The second set will include both bishops, 
+		    both knights and both rooks for a total of 6 pieces (approximate printing time: 6 hrs and 15 mins.).The third set will be the 
+		    king and queen (approximiate printing time: 8 hrs.).Total print time for each set is about 18.5 hours.My goal is to print a complete set 
+		    each week. To give myself some extra time in case something goes awry, I plan to 
+		    have the first set finished by Monday, May 24th, and the second set by Monday, May 31st, giving myself 2 extra days each week for adjustments.
+		    If I get completely off track for this project and the printing goes sideways, my contingency plan is to print one set instead of two. 
+            </p>
+		      
+            <p align="center">
+                 <img src="timeline.png" height=800></a>
+               
+            </p><br><br>
+
+	    <h2 style="font-size: 36px">BOM and Sourcing Schedule</h2>
+            <p style="width: 650px; display: inline-block; text-align: left">For the physical materials, I intend to use 2 
+		    different spools of PLA filament: one is bronze, and the other is black. I will also be using Rhino/Grasshopper to design and render these pieces.
+		    I will be using Cura to slice and create the gcode. And I will be printing on an Ender Pro 3 machine. Additionally, I will also be using filament clippers 
+		    and a bed scraper. All of these materials I currently have on hand.
+            </p>
+            
+            <p align="center">
+                 
+                 <img src="plafilament.png" height=300></a>
+                 <img src="rhino.png" height=300></a>
+                 <img src="grasshopper.png" height=300></a>
+		 <img src="cura.png" height=300></a>
+		 <img src="enderpro.jpg" height=300></a>
+		 <img src="clippers.jpg" height=300></a>
+		 <img src="scraper2.jpg" height=300></a>
+            </p><br><br>
+
+ 	<p style="width: 650px; display: inline-block; align: center">Thanks Junchao for the rendering and modeling advice!
+            </p><br>
+
+            <p style="width: 650px; display: inline-block; align: center; font-size: 36px">REFERENCES
+            </p>
+           
+              <p align="center">
+		 <a href="https://www.fide.com/FIDE/handbook/Standards_of_Chess_Equipment_and_tournament_venue.pdf">Chess Guidelines</a><br>
+                 <a href="https://www.calatrava.com/projects/turning-torso-malmoe.html?view_mode=gallery&image=1">Turning Torso</a><br>
+		 <a href="https://www.calatrava.com/projects/chicago-spire-tower-chicago.html?view_mode=gallery&image=5">Chicago Spire</a><br>
+		 <a href="https://www.youtube.com/watch?v=TT5a7HZxaE0">Youtube Tutorial</a><br>
+		 <a href="grasshopper files.zip">All Grasshopper Models</a><br>    
+		 <a href="renderset.3dm">Rhino Rendering</a><br>  
+		 <a href="https://www.amazon.com/dp/B07S85K1HK?psc=1&ref=ppx_yo2_dt_b_product_details">PLA filament</a>
+            
+            </p><br><br>
+
+           
+</div>
+    </body>
+</html>
