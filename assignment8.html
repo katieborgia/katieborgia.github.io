@@ -4,7 +4,7 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
-        <title>Katie Borgia's Assignment 7 Page!</title> 
+        <title>Katie Borgia's Assignment 8 Page!</title> 
 
         <link href="style.css" media="screen" rel="stylesheet" type="text/css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,7 +23,7 @@
     </header>
 
         <div class="header" align="center">
-            <h1>Part 1: Final Project Proposal</h1>
+            <h1>Final Project</h1>
 		<h2 style="font-size: 36px">Concept</h2>
           <p style="width: 650px; display: inline-block; text-align: left;">For my final project I wanted to create a series of pieces. 
 		  After much thought I decided I wanted to make two sets of chess pieces. Santiago Calatrava is one of my 
@@ -45,25 +45,37 @@
 		<img src="sketches12.png" height=300>
 		<img src="sketches13.png" height=300><br>
             </p><br><br>
-		
+	
+	<h2 style="font-size: 36px">Grasshopper and Rhino</h2>
 	    <p style="width: 650px; display: inline-block; text-align: left;">Since I am still pretty new to Grasshopper, I had to find a tutorial that would help
 		    me undestand how to build these pieces. (See below in References for a link to the video.) My plan was to start with one piece in Grasshopper, and then model the
 		    other pieces based on the same geometry. I set up number sliders for the number of sides which I decided would be 8. I also
-		    add a slider for base radius, the amount of rotation, the height, and the height spacing. Because all piece sizes were increments of
+		    added a slider for base radius, the amount of rotation, the height, and the height spacing. Because all piece sizes were increments of
 		    .5cm, I was able to set the spacing between 10 -20 to adjust the height. I discovered that I had to add an extra .5 to every height because 
 		    the first point was at 0. For the rotation, I orginially didn't have a strategy for how it was used, but then I realized my pieces weren't 
 		    looking cohesive so I decided that I would change the rotation of each piece by 2 based on the weakest piece to the strongest piece in the 
-		    game. The other component that was critical to this success was the graph mapper. Because I was pretty unfamiliar with how the graph mapper 
+		    game. </p>
+		    
+		     <p align="center">Intial Shapes and Ideas
+		<img src="bad1.png" height=600><br>
+		<img src="bad2.png" height=300><br>
+		<img src="bad3.png" height=300>
+		
+            </p><br><br>
+		    
+		    <p style="width: 650px; display: inline-block; text-align: left;">The other component that was critical to this success was the graph mapper. 
+	            Because I was pretty unfamiliar with how the graph mapper 
 		    worked and the types of graphs, I spent some time playing with the different graph types and figuring out which one worked best for the shapes
-		    I was trying to create. (Below is the Grasshopper geometry for the queen piece). Once I had all pieces 
+		    I was trying to create. I chose the bezier graph mapper. (Below is the Grasshopper geometry for the queen piece). Once I had all pieces 
 		    modeled, I transferred all pieces to one Rhino file so I could see them all together as a set. I realized the slider I had for radius was 
 		    base radius 
 		    and not the widest radius of the piece, so I had to do some minor adjustments to make sure the pieces were accurately scaled in reference 
 		    to each other. Next, I had to use the Flip 
 		    command for 
 		    all of the pieces, followed by the Cap command to close the pieces and make closed polygons. Then I made a chess board to begin alignment 
-		    for rendering.
-		    After the pieces were set up for a chess set, I then divided the sets into two different layers so I could render them separately.
+		    for rendering and to also get a visual sense of size and scale for what the completed sets would look like together.
+		    After the pieces were set up for a chess set, I then divided the sets into two different layers so I could render them separately.<b>*Note: due to the
+		    round shape of the pieces, they were all exported at 0.001mm.*
             </p>
             
             <p align="center">
@@ -74,9 +86,9 @@
             </p><br><br>
 
 	    <h2 style="font-size: 36px">Rendering</h2>
-            <p style="width: 650px; display: inline-block; text-align: left">Below is a rendering of the intended final design. I hope to create one set 
-		    that is bronze and one set that is black, both in PLA filament. Due to time and print bed constraints, I do not plan to build the chessboard at this time,
-		    but wanted to include it in the rendering for context. The one on the left is the plaster render, and the one on the right is the plastic render.
+            <p style="width: 650px; display: inline-block; text-align: left">Below is a rendering of the final design.<br>(Due to time and print bed constraints, 
+		    printing the chessboard was not included in my project proposal.)
+		  
             </p>
     
  
@@ -86,55 +98,57 @@
                  
             </p><br><br>
 
-	    <h2 style="font-size: 36px">Tasks</h2>
-            <p style="width: 650px; display: inline-block; text-align: left">
-		    GRASSHOPPER<br> For this project, I want to strengthen my Grasshopper skills. After watching a tutorial online about how to create rotating
-		    shapes in grasshopper, I want to build all of my shapes in Grasshopper instead of sketching in Rhino and using the Revolve command. Grasshopper
-		    is used to create the height, the base radius, the rotation of the object, and using graph mapper to create unique shapes.<br><br>  
-		    RHINO<br>Post bake, Rhino is used for flipping, capping, and aligning all pieces. It is also used for any last minute size adjustments, and 
-		    for setting up the chessboard for rendering.<br><br> 
-		    SLICING<br>Because of the intricate, rotating, bulbous shapes, choosing the correct slicing settings will be critical to 
-		    a successful print. Choosing the correct print speed and support will be critical to the success of the prints.<br><br> 
-		    PRINTING<br>In total, there will be 32 pieces to print: 16 pawns, 4 rooks, 4 knights, 4 bishops, 2 queens, and 2 kings. Instead of doing 32
-		    separate prints, I will print in 3 groups for each set:<br> 1. 8 pawns<br> 2. 2 rooks, 2 knights, and 2 bishops<br> 3. king and queen<br><br>
-		    RENDERING<br>Because there are so many pieces to these sets, and they are two different colors, rendering is helpful to show a more realistic view of 
-		    what these pieces should look like when finished.
-            </p><br><br>
-
-      
-	    <h2 style="font-size: 36px">Timeline</h2>
-            <p style="width: 650px; display: inline-block; text-align: left">As shown above, the design and rendering for this project is complete. For this process 
-		    I plan to 3D print each set in 3 groups each.
-		    The first group will be all 8 pawns (approximate printing time: 4 hrs. and 15 mins.). The second set will include both bishops, 
-		    both knights and both rooks for a total of 6 pieces (approximate printing time: 6 hrs and 15 mins.).The third set will be the 
-		    king and queen (approximiate printing time: 8 hrs.).Total print time for each set is about 18.5 hours.My goal is to print a complete set 
-		    each week. To give myself some extra time in case something goes awry, I plan to 
-		    have the first set finished by Monday, May 24th, and the second set by Monday, May 31st, giving myself 2 extra days each week for adjustments.
-		    If I get completely off track for this project and the printing goes sideways, my contingency plan is to print one set instead of two. 
+<h2 style="font-size: 36px">Slicing and Printing</h2>
+            <p style="width: 650px; display: inline-block; text-align: left">I knew based on the unique shape of these pieces, that slicing would be critical
+		    to the success of the prints. I used almost identical settings for each set of prints. For the pawns, I started with low quality base setting.
+		    From there, I adjusted the infill shape to be lines because it looked to provide the most support around the edges. I also changed from a 
+		    brim to a skirt. The speed was changed from 50 to 75. Finally, I changed the travel resolution and max travel resolution from .25 to .5.
+		    The other two sets of prints (1. two rooks, two bishops, two knights, and 2. knight and queen) followed the same settings except they both 
+		    needed support, so I added normal support everywhere for both.<br><br>
+		    Per the suggestion of Professor Peek, I sliced some of the pieces in vase mode 
+		    because it would give me an understanding of the shhapes and sizes with a much shorter print time. I printed 4 pieces in vase mode: the pawn,
+		    rook, knight, and bishop. I did not vase mode print the queen or king because those would take about an hour and 3 hours respectively, and because
+		    the other 4 vase prints looked good. Note: Because of how delicate the vase mode was, some of the pieces lost their base when pulled off the bed,
+		    so the size and shapes of what the final pieces look like aren't exactly accurate to these images.
+		  
             </p>
-		      
+    
+ 
             <p align="center">
-                 <img src="timeline.png" height=800></a>
-               
-            </p><br><br>
-
-	    <h2 style="font-size: 36px">BOM and Sourcing Schedule</h2>
-            <p style="width: 650px; display: inline-block; text-align: left">For the physical materials, I intend to use 2 
-		    different spools of PLA filament: one is bronze, and the other is black. I will also be using Rhino/Grasshopper to design and render these pieces.
-		    I will be using Cura to slice and create the gcode. And I will be printing on an Ender Pro 3 machine. Additionally, I will also be using filament clippers 
-		    and a bed scraper. All of these materials I currently have on hand.
-            </p>
-            
-            <p align="center">
+                 <img src="vase1.png" height=300></a>
+	    	 <img src="vase2.png" height=300></a>
                  
-                 <img src="plafilament.png" height=300></a>
-                 <img src="rhino.png" height=300></a>
-                 <img src="grasshopper.png" height=300></a>
-		 <img src="cura.png" height=300></a>
-		 <img src="enderpro.jpg" height=300></a>
-		 <img src="clippers.jpg" height=300></a>
-		 <img src="scraper2.jpg" height=300></a>
             </p><br><br>
+
+<p style="width: 650px; display: inline-block; text-align: left">I started with the bronze set. I printed the pawns first because I felt they were the least risky
+	and I would be able to print 8 pieces at once. The printing time took about 4 hours. Next, I moved onto the rooks, knights, and bishops. This print took 
+	about 6 hours. I found that the support strucutres helped to more easily remove the pieces from the bed, which was a plus! Lastly, I printed the king
+	and queen which took about 7 hours. The queen printed correctly, but the king had one of it's supports fall over during the print, but luckily was still able to print. I printed
+	the second set in the same manner as the first.
+		  
+            </p>
+    
+ 
+            <p align="center">
+                 <img src="set1.png" height=300></a>
+	    	 <img src="set2.png" height=300></a>
+                 
+            </p><br><br>
+
+<p style="width: 650px; display: inline-block; text-align: left">I wanted to be able to display the sets, so I created a chessboard out of cardboard and sharpie
+	markers. I measured and designed the board to fit the pieces based on the same suggested measurements used to make the pieces. Once the board was finished
+	I was able to line up all the pieces to bring the sets together.
+		  
+            </p>
+    
+ 
+            <p align="center">
+                 <img src="full1.png" height=300></a>
+	    	 <img src="full2.png" height=300></a>
+                 
+            </p><br><br>
+	   
+           
 
  	<p style="width: 650px; display: inline-block; align: center">Thanks Junchao for the rendering and modeling advice!
             </p><br>
