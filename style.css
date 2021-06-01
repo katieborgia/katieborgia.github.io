@@ -79,6 +79,10 @@ h2 {
   text-decoration: none;
 }
 
+div.assignments {
+  align: center
+}
+
  div.p {
         padding: 20px;
         text-align: left;
